@@ -1,4 +1,5 @@
 import "./Toggle.css";
+import style from "./style.module.css";
 
 function Toggle() {
   const moveToggle = () => {
@@ -13,7 +14,7 @@ function Toggle() {
     }
   };
   return (
-    <div>
+    <div className={style.area}>
       <button onClick={moveToggle}>
         <div className="outbox">
           <div className="verticalbox"></div>

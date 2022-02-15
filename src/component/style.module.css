@@ -1,0 +1,54 @@
+.area {
+  width: 100vw;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tagBox {
+  width: 500px;
+  min-height: 50px;
+  border-radius: 20px;
+  border: 1px solid slateblue;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse;
+}
+.tagInput {
+  width: 150px;
+  height: 40px;
+  padding-left: 10px;
+  outline: none;
+  border: none;
+  font-size: 1.1em;
+  background-color: transparent;
+}
+.tagUl {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.tagLi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 5px 10px;
+  margin: 5px;
+  list-style: none;
+  border-radius: 10px;
+  background-color: slateblue;
+  color: #fff;
+}
+.tagLi > button {
+  color: slateblue;
+  transition: 0.3s;
+}
+.tagLi:hover > button {
+  color: #fff;
+}
