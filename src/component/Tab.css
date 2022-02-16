@@ -1,0 +1,13 @@
+.tabUl {
+  display: flex;
+  background-color: #bdbdbd;
+}
+.tabColor {
+  list-style: none;
+  padding: 5px 35px;
+  transition: 0.3s;
+}
+.tabColor.active {
+  background-color: slateblue;
+  color: #fff;
+}

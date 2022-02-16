@@ -4,7 +4,6 @@ import style from "./style.module.css";
 function Tag() {
   const [tagname, setTagname] = useState("");
   const [tagList, setTagList] = useState([]);
-  let WARNINGMSG;
 
   const onChange = (event) => setTagname(event.target.value);
   const putTag = (e) => {

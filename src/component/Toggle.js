@@ -1,25 +1,27 @@
 import "./Toggle.css";
 import style from "./style.module.css";
+import { useState } from "react";
 
 function Toggle() {
+  const [handleActive, setHandleActive] = useState(true);
   const moveToggle = () => {
-    const circle = document.querySelector(".inner-circle");
-    const vertical = document.querySelector(".verticalbox");
-    if (circle.classList.contains("active")) {
-      circle.classList.remove("active");
-      vertical.classList.remove("moving");
+    if (handleActive) {
+      setHandleActive(false);
     } else {
-      circle.classList.add("active");
-      vertical.classList.add("moving");
+      setHandleActive(true);
     }
   };
   return (
     <div className={style.area}>
       <button onClick={moveToggle}>
         <div className="outbox">
-          <div className="verticalbox"></div>
+          <div
+            className={handleActive ? "verticalbox" : "verticalbox moving"}
+          ></div>
         </div>
-        <div className="inner-circle"></div>
+        <div
+          className={handleActive ? "inner-circle" : "inner-circle active"}
+        ></div>
       </button>
     </div>
   );
