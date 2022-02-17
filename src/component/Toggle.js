@@ -1,5 +1,4 @@
-import "./Toggle.css";
-import style from "./style.module.css";
+import "../Style/first.css";
 import { useState } from "react";
 
 function Toggle() {
@@ -12,8 +11,8 @@ function Toggle() {
     }
   };
   return (
-    <div className={style.area}>
-      <button onClick={moveToggle}>
+    <div className="area">
+      <button className="toggleBtn" onClick={moveToggle}>
         <div className="outbox">
           <div
             className={handleActive ? "verticalbox" : "verticalbox moving"}
@@ -23,6 +22,7 @@ function Toggle() {
           className={handleActive ? "inner-circle" : "inner-circle active"}
         ></div>
       </button>
+      Toggle Switch {handleActive ? "OFF" : "ON"}
     </div>
   );
 }

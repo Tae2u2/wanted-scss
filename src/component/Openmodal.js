@@ -1,14 +1,13 @@
 import { useState } from "react";
 import ModalBox from "./Modalbox";
-import style from "./style.module.css";
+import "../Style/first.css";
 
 function Openmodal() {
   const [openModalBox, setOpenModalBox] = useState(false);
   return (
-    <div className={style.area}>
-      <h1>버튼을 눌러주세요!</h1>
+    <div className="area">
       <button className="openModalBtn" onClick={() => setOpenModalBox(true)}>
-        Here!
+        Open Modal
       </button>
       {openModalBox && <ModalBox closeModal={setOpenModalBox} />}
     </div>

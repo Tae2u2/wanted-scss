@@ -1,13 +1,12 @@
 import { useState } from "react";
-import style from "./style.module.css";
-import "./Tab.css";
+import "../Style/first.css";
 
 function Tab() {
   const [stayNum, setStayNum] = useState(1);
   const clickHere = (indexNum) => setStayNum(indexNum);
 
   return (
-    <div className={style.area}>
+    <div className="area">
       <nav>
         <ul className="tabUl">
           <li

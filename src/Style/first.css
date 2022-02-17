@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+.App {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.area {
+  width: 100vw;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.input-deco {
+  padding: 8px 10px;
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+  outline-color: slateblue;
+}
+
+.for-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0px;
+}
+
+.for-line label {
+  margin-right: 15px;
+}
+
+.auto-deco {
+  width: 500px;
+  position: relative;
+  padding: 15px 15px;
+  outline: none;
+  border: 1px solid #bdbdbd;
+  border-radius: 20px;
+  -webkit-box-shadow: 2px 2px 3px #bdbdbd;
+          box-shadow: 2px 2px 3px #bdbdbd;
+  font-weight: 500;
+}
+
+nav {
+  width: 600px;
+  height: 40px;
+}
+
+.tabUl {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #bdbdbd;
+  text-align: left;
+}
+
+.tabColor {
+  list-style: none;
+  padding: 10px 150px 10px 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: gray;
+  cursor: pointer;
+}
+
+.tabColor.active {
+  background-color: slateblue;
+  color: #fff;
+}
+
+section {
+  margin-top: 110px;
+}
+
+.tagBox {
+  width: 600px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  overflow-wrap: wrap;
+  border-radius: 5px;
+  border: 1px solid slateblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+}
+
+.tagInput {
+  width: 200px;
+  height: 40px;
+  padding-left: 10px;
+  outline: none;
+  border: none;
+  font-size: 1.1em;
+  background-color: transparent;
+}
+
+.tagUl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.tagLi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  height: 25px;
+  padding: 5px 10px;
+  margin: 5px;
+  list-style: none;
+  border-radius: 5px;
+  background-color: slateblue;
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.tagLi > button {
+  margin-left: 5px;
+  color: slateblue;
+  border-radius: 50%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: #fff;
+}
+
+.openModalBtn {
+  position: relative;
+  margin-top: 180px;
+  padding: 18px 14px;
+  background-color: slateblue;
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.big-box {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 500px;
+  background-color: #bdbdbd67;
+}
+
+.middle-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 500px;
+  height: 120px;
+  border-radius: 10px;
+  background-color: #fff;
+  color: slateblue;
+  padding-bottom: 20px;
+}
+
+.middle-box .closeModalBtn {
+  font-weight: 600;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.toggleBtn {
+  margin-top: 100px;
+  margin-bottom: 10px;
+  position: relative;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.outbox {
+  position: relative;
+  width: 120px;
+  height: 70px;
+  border: 6px solid white;
+  -webkit-box-shadow: 3px 3px 3px #bdbdbd, -1px -1px 1px #bdbdbd;
+          box-shadow: 3px 3px 3px #bdbdbd, -1px -1px 1px #bdbdbd;
+  border-radius: 40px;
+  background-color: #afadad;
+  overflow: hidden;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.verticalbox {
+  position: absolute;
+  width: 130px;
+  height: 80px;
+  top: 0px;
+  left: -93px;
+  background-color: #afadad;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.inner-circle {
+  position: absolute;
+  top: 8px;
+  left: 13px;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background-color: white;
+  -webkit-box-shadow: inset -3px -3px 3px #bdbdbd;
+          box-shadow: inset -3px -3px 3px #bdbdbd;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.inner-circle.active {
+  left: 63px;
+}
+
+.verticalbox.moving {
+  background-color: slateblue;
+  left: 0px;
+}
+/*# sourceMappingURL=first.css.map */

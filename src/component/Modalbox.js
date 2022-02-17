@@ -1,16 +1,17 @@
+import "../Style/first.css";
+
 function ModalBox({ closeModal }) {
   const handleClose = () => {
     closeModal(false);
   };
 
   return (
-    <div onClick={handleClose}>
-      <div>
-        <button onClick={handleClose}>X</button>
-        Modal
-        <div>
-          <button onClick={handleClose}>cancel</button>
-        </div>
+    <div className="big-box" onClick={handleClose}>
+      <div className="middle-box">
+        <button className="closeModalBtn" onClick={handleClose}>
+          X
+        </button>
+        HELLO MODAL!
       </div>
     </div>
   );

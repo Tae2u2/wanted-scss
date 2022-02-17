@@ -1,9 +1,9 @@
-import style from "./style.module.css";
+import "../Style/first.css";
 
 function AutoComplete() {
   return (
-    <div className={style.area}>
-      <input type="text" list="auto-options" />
+    <div className="area">
+      <input type="text" list="auto-options" className="auto-deco" />
       <datalist id="auto-options">
         <option value="antique" />
         <option value="vintage" />

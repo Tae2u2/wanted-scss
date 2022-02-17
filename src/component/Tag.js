@@ -1,5 +1,5 @@
 import { useState } from "react";
-import style from "./style.module.css";
+import "../Style/first.css";
 
 function Tag() {
   const [tagname, setTagname] = useState("");
@@ -21,20 +21,20 @@ function Tag() {
   };
 
   return (
-    <div className={style.area}>
-      <div className={style.tagBox}>
+    <div className="area">
+      <div className="tagBox">
         <input
           type="text"
           value={tagname}
           onChange={onChange}
           onKeyDown={putTag}
-          className={style.tagInput}
-          placeholder="Here!"
+          className="tagInput"
+          placeholder="Press enter to add tags"
         />
-        <ul className={style.tagUl}>
+        <ul className="tagUl">
           {tagList.map((item, index) => (
-            <li key={index} className={style.tagLi}>
-              #{item} <button onClick={() => deleteTag(item)}>X</button>
+            <li key={index} className="tagLi">
+              {item} <button onClick={() => deleteTag(item)}>x</button>
             </li>
           ))}
         </ul>
